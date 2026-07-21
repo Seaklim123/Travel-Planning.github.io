@@ -1,0 +1,82 @@
+.image-size {
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+}
+
+.btn:hover {
+    border-color: #4B8EE2;
+    background-color: #4B8EE2;
+}
+
+.card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.destination-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 18px;
+    background:#eaf3ff;
+    color:#4B8EE2;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.destination-header h2{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.destination-header p{
+    max-width:650px;
+    margin:auto;
+    font-size:1rem;
+}
+
+.btn-filter{
+    border:1px solid #dbe4f3;
+    border-radius:30px;
+    padding:10px 22px;
+    font-weight:600;
+    background:#fff;
+    transition:.3s;
+}
+
+.btn-filter:hover{
+    background:#4B8EE2;
+    color:#fff;
+    border-color:#4B8EE2;
+}
+
+.btn-filter.active{
+    background:#4B8EE2;
+    color:#fff;
+    border-color:#4B8EE2;
+}
+
+@media (max-width:768px){
+
+    .destination-header h2{
+        font-size:2rem;
+    }
+
+    .btn-filter{
+        width:100%;
+    }
+
+}

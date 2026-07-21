@@ -1,0 +1,124 @@
+.logo{
+    width: 200px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.active {
+    color: #4B8EE2;
+}
+
+.text-color {
+    color: #1F2937;
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+.bg-color {
+    background-color: #4B8EE2;
+}
+
+.hover-color:hover {
+    color: #7ea5d5;
+}
+
+.btn-hover-color:hover {
+    background-color: #4B8EE2;
+}
+.box{
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+
+.btn-outline {
+    border-color: #4B8EE2;
+    color: #4B8EE2;
+}
+
+/* White Container */
+
+.nav-wrapper{
+    background:#f6f0f0;
+    border-radius:60px;
+    padding:10px 20px;
+    display:flex;
+    align-items:center
+}
+
+/* Menu */
+
+.navbar-collapse{
+    display:flex;
+    align-items:center;
+}
+
+.navbar-nav{
+    gap:15px;
+}
+
+.nav-link{
+    color:#222 !important;
+    font-weight:500;
+    transition:.3s;
+    border-radius:30px;
+    padding:10px 18px !important;
+}
+
+.nav-link:hover{
+    color:#4B8EE2 !important;
+    background:#EDF5FF;
+}
+
+.nav-link.active{
+    color:#4B8EE2 !important;
+    font-weight:600;
+}
+
+/* Login Button */
+
+.login-btn{
+    background:#4B8EE2;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 24px;
+}
+
+.login-btn:hover{
+    background:#3b78c6;
+    color:#fff;
+}
+
+@media (max-width:991px){
+
+    .nav-wrapper{
+        border-radius:25px;
+        padding:15px;
+    }
+
+    .navbar-collapse{
+        margin-top:20px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+        gap:8px;
+    }
+
+    .nav-link{
+        border-radius:12px;
+    }
+
+    #accountMenu{
+        margin-top:15px;
+        text-align:center;
+    }
+
+    .login-btn{
+        width:100%;
+    }
+}
+
+
+

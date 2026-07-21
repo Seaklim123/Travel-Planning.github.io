@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <script src="https://jsdelivr.net"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/trip.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top logo">
+            </a>
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link text-color hover-color" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-color hover-color" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link text-color hover-color" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="trip-planning.html"><b>Trip Planning</b></a></li>
+                <li class="nav-item"><a class="nav-link text-color hover-color" href="#"><i class="bi bi-person-circle"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="add-trip">   
+            <div class="d-flex justify-content-end mb-3">
+                <button class="btn border bg-color">Add Trip</button>
+            </div>    
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Trip Name" aria-label="Trip Name">
+                </div>
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Destination</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <input type="date" class="form-control" placeholder="Start Date" aria-label="Start Date">
+                </div>
+                <div class="col">
+                    <input type="date" class="form-control" placeholder="End Date" aria-label="End Date">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <input type="message" class="form-control" placeholder="Notes" aria-label="Notes">
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button class="btn border bg-color">Save</button>
+            </div>
+        </div>
+
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Trip</th>
+                <th>Destination</th>
+                <th>Status</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Duration</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                <strong>Thailand Summer Trip</strong>
+            </td>
+
+            <td>
+                Bangkok, Thailand
+            </td>
+
+            <td>
+                <span class="badge bg-warning">
+                    Planning
+                </span>
+            </td>
+
+            <td>
+                July 6, 2026
+            </td>
+
+            <td>
+                July 21, 2026
+            </td>
+
+            <td>
+                15 Days
+            </td>
+
+            <td>
+                <button class="btn btn-primary btn-sm">
+                    View
+                </button>
+
+                <button class="btn btn-danger btn-sm">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+
+   
+
+    <div class="footer mt-auto border-top mt-5 bg-color p-5">
+        <div class="container">
+            <div class="d-flex justify-content-between"> 
+                <div class="d-flex flex-column">
+                    <h5 class="text-color">Social Media</h5>
+                    <a class="text-color nav-link hover-color" href="#"><i class="bi bi-facebook text-color pe-2"></i>Travel Planner</a>
+                    <a class="text-color nav-link hover-color" href="#"><i class="bi bi-telegram text-color pe-2"></i>@Travel_Planner</a>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h5 class="text-color">Contact Info</h5>
+                    <a class="text-color nav-link hover-color" href="#"><i class="bi bi-telephone text-color pe-2"></i>097 800 077</a>
+                    <a class="text-color nav-link hover-color" href="#"><i class="bi bi-envelope text-color pe-2"></i>travelplanner@gmail.com</a>
+                    <a class="text-color nav-link hover-color" href="#"><i class="bi bi-geo-alt text-color pe-2"></i>2464 Royal Ln. Mesa, New Jersey 45463</a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Somrors. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

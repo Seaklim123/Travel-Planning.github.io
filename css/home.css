@@ -1,0 +1,152 @@
+.image-oval {
+    border-radius: 211.042vw;
+    height: 500px;
+    width: 300px; 
+    object-fit: cover;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.image-oval-down {
+    border-radius: 211.042vw;
+    height: 500px;
+    width: 300px; 
+    object-fit: cover;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    max-width: 380px; 
+}
+
+.modal-content {
+    min-height: 420px; 
+}
+
+.modal-body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.home-hero{
+    min-height:100vh;
+    padding-top:120px;
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.25),
+        rgba(53,74,130,0.65)
+    ),
+
+    url("../images/cover/2.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* Navbar */
+.home-navbar{
+    margin:30px 30px 0 20px;
+    background:#ffffff;
+    border-radius:60px;
+    padding:1px 30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.logo{
+    width:200px;
+}
+
+.nav-link{
+    color:#111 !important;
+    font-weight:600;
+    margin:0 15px;
+}
+
+.nav-link.active{
+    color:#4B8EE2 !important;
+
+}
+
+.login-btn{
+    border:1px solid #4B8EE2;
+    color:#4B8EE2;
+    background:white;
+    padding:8px 20px;
+    border-radius:8px;
+}
+
+.login-btn:hover{
+    background:#4B8EE2;
+    color:white;
+}
+
+.hero-content{
+    height:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    max-width:650px;
+}
+
+.hero-btn{
+    margin-top:20px;
+    background:white;
+    color:#4B8EE2;
+    padding:12px 35px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.hero-btn:hover{
+    background:#4B8EE2;
+    color:white;
+}
+
+@media(max-width:768px){
+
+
+    .home-navbar{
+
+        border-radius:25px;
+
+        padding:15px;
+
+    }
+
+
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+
+}

@@ -1,0 +1,62 @@
+.about-img{
+    width: 100%;
+    height: auto;
+}
+.about-section{
+    background-image: url("../images/background.jpg"); /* optional */
+    background-size: cover;
+    background-position: center;
+    padding:80px 0;
+}
+
+.about-card{
+    background:white;
+    border-radius:25px;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+.primary-color{
+    color:#4B8EE2;
+}
+
+.about-badge{
+    background:#4B8EE2;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+.about-btn{
+    background:#4B8EE2;
+    color:white;
+    border-radius:30px;
+    padding:12px 30px;
+}
+
+.about-btn:hover{
+    background:#3a79c6;
+    color:white;
+}
+
+/* Images */
+
+.img1{
+    width:320px;
+    border-radius:15px;
+}
+
+.img2{
+    width:240px;
+    border-radius:15px;
+
+    position:absolute;
+
+    right:20px;
+    bottom:-40px;
+
+    transform:rotate(-12deg);
+}
+
+.shadow{
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
