@@ -32,96 +32,210 @@
             </ul>
         </nav>
 
-        <div class="add-trip">   
-            <div class="d-flex justify-content-end mb-3">
-                <button class="btn border bg-color">Add Trip</button>
-            </div>    
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Trip Name" aria-label="Trip Name">
-                </div>
-                <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Destination</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="date" class="form-control" placeholder="Start Date" aria-label="Start Date">
-                </div>
-                <div class="col">
-                    <input type="date" class="form-control" placeholder="End Date" aria-label="End Date">
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="message" class="form-control" placeholder="Notes" aria-label="Notes">
-                </div>
-            </div>
-            <div class="d-flex justify-content-end mt-3">
-                <button class="btn border bg-color">Save</button>
-            </div>
+        <div class="card shadow-sm border-0 rounded-4 p-4 mb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="fw-bold mb-1">Plan Your Trip</h3>
+            <p class="text-muted mb-0">
+                Create a new travel plan and manage your itinerary.
+            </p>
         </div>
 
-        <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Trip</th>
-                <th>Destination</th>
-                <th>Status</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Duration</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-
-    <tbody>
-        <tr>
-            <td>
-                <strong>Thailand Summer Trip</strong>
-            </td>
-
-            <td>
-                Bangkok, Thailand
-            </td>
-
-            <td>
-                <span class="badge bg-warning">
-                    Planning
-                </span>
-            </td>
-
-            <td>
-                July 6, 2026
-            </td>
-
-            <td>
-                July 21, 2026
-            </td>
-
-            <td>
-                15 Days
-            </td>
-
-            <td>
-                <button class="btn btn-primary btn-sm">
-                    View
-                </button>
-
-                <button class="btn btn-danger btn-sm">
-                    Delete
-                </button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+        <button class="btn bg-color text-white rounded-pill px-4">
+            <i class="bi bi-plus-lg me-2"></i>
+            Add Trip
+        </button>
     </div>
 
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">Trip Name</label>
+            <input type="text" class="form-control" placeholder="Summer Vacation">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">Destination</label>
+            <select class="form-select">
+                <option selected>Select Destination</option>
+                <option>Siem Reap</option>
+                <option>Kampot</option>
+                <option>Koh Rong</option>
+                <option>Mondulkiri</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">Start Date</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">End Date</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">Budget ($)</label>
+            <input type="number" class="form-control" placeholder="500">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-semibold">Status</label>
+            <select class="form-select">
+                <option>Planning</option>
+                <option>Upcoming</option>
+                <option>Completed</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label fw-semibold">Notes</label>
+            <textarea class="form-control" rows="4"
+                placeholder="Write your travel notes..."></textarea>
+        </div>
+
+    </div>
+
+    <div class="text-end mt-4">
+        <button class="btn bg-color text-white px-4 rounded-pill">
+            <i class="bi bi-check-circle me-2"></i>
+            Save Trip
+        </button>
+    </div>
+
+</div>
+<div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+
+    <div class="card-header bg-white border-0 p-4">
+
+        <h4 class="fw-bold mb-1">
+            My Trips
+        </h4>
+
+        <p class="text-muted mb-0">
+            Manage all your travel plans.
+        </p>
+
+    </div>
+
+    <div class="table-responsive mb-5">
+
+        <table class="table align-middle mb-0 trip-table">
+
+            <thead>
+
+                <tr>
+                    <th>Trip</th>
+                    <th>Status</th>
+                    <th>Budget</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Days</th>
+                    <th class="text-center">Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <div class="fw-bold">
+                            Thailand Summer Trip
+                        </div>
+
+                        <small class="text-muted">
+                            Bangkok, Thailand
+                        </small>
+                    </td>
+
+                    <td>
+                        <span class="badge bg-warning text-dark px-3 py-2">
+                            Planning
+                        </span>
+                    </td>
+
+                    <td>$850</td>
+
+                    <td>06 Jul 2026</td>
+
+                    <td>21 Jul 2026</td>
+
+                    <td>15 Days</td>
+
+                    <td class="text-center">
+
+                        <button class="btn btn-light btn-sm me-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+
+                        <button class="btn btn-light btn-sm me-1">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+
+                        <button class="btn btn-light btn-sm text-danger">
+                            <i class="bi bi-trash"></i>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <div class="fw-bold">
+                            Siem Reap Adventure
+                        </div>
+
+                        <small class="text-muted">
+                            Siem Reap, Cambodia
+                        </small>
+                    </td>
+
+                    <td>
+                        <span class="badge bg-success px-3 py-2">
+                            Upcoming
+                        </span>
+                    </td>
+
+                    <td>$300</td>
+
+                    <td>02 Aug 2026</td>
+
+                    <td>06 Aug 2026</td>
+
+                    <td>5 Days</td>
+
+                    <td class="text-center">
+
+                        <button class="btn btn-light btn-sm me-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+
+                        <button class="btn btn-light btn-sm me-1">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+
+                        <button class="btn btn-light btn-sm text-danger">
+                            <i class="bi bi-trash"></i>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+</div>
    
 
     <div class="footer mt-auto border-top mt-5 bg-color p-5">

@@ -1,3 +1,54 @@
 .add-trip{
     padding: 50px;
 }
+
+.card{
+    border-radius:20px;
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#4B8EE2;
+}
+
+.trip-table thead{
+    background:#4B8EE2;
+    color:white;
+}
+
+.trip-table thead th{
+    border:none;
+    padding:18px;
+}
+
+.trip-table tbody td{
+    padding:20px 18px;
+    vertical-align:middle;
+}
+
+.trip-table tbody tr{
+    transition:.3s;
+}
+
+.trip-table tbody tr:hover{
+    background:#f7fbff;
+}
+
+.trip-table .btn{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    padding:0;
+}
+
+.badge{
+    font-size:.85rem;
+    border-radius:20px;
+}

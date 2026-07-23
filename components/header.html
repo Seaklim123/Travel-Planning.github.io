@@ -1,0 +1,93 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg home-navbar">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo" alt="Logo">
+        </a>
+        <button class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="trip-plan.html">Trip Planning</a>
+                </li>
+            </ul>
+
+            <div class="d-flex gap-2">
+                <button class="btn login-btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Login
+                </button>
+                <button class="btn login-btn" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register
+                </button>
+            </div>
+        </div>
+
+    </nav>
+</div>
+
+<!-- Mobile Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="trip-plan.html">Trip Planning</a>
+            </li>
+
+        </ul>
+
+        <div class="d-grid gap-2 mt-4">
+            <button class="btn login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal">
+                Login
+            </button>
+
+            <button class="btn login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal">
+                Register
+            </button>
+        </div>
+
+    </div>
+</div>
